@@ -29,9 +29,6 @@ def read_txt_file(source):
             y.append(y_tmp)
             X_tmp = []
             y_tmp = []
-        
-        if idx == 5000:
-            break
 
     assert len(X) == len(y)
 
