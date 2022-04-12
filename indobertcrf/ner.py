@@ -400,5 +400,11 @@ def evaluate(model, predict_dataloader, label_map):
             for M in range(len(mask)):
                 all_preds.extend([inverted_map[I] for I in predicted[M][mask[M]]])
                 all_labels.extend([inverted_map[I] for I in truth[M][mask[M]]])
-
-    print(classification_report(all_labels , all_preds))
+    
+    classes = np.unique(np.array(all_preds+all_labels))
+    classes = classes.tolist()
+    classes.remove("O")
+    classes.remove("[CLS]")
+    new_classes = classes.copy()
+    
+    print(classification_report(all_labels , all_preds, labels=new_classes))
