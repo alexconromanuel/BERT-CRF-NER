@@ -16,6 +16,9 @@ from transformers import AdamW
 from transformers import AutoTokenizer
 from transformers import BertModel
 
+import warnings
+warnings.filterwarnings("ignore")
+
 def run(dataset):
     cuda_yes = torch.cuda.is_available()
     device = torch.device("cuda") if cuda_yes else torch.device("cpu")
@@ -31,8 +34,8 @@ def run(dataset):
 
     tokenizer = AutoTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
 
-    train_dataset = ner.NerDataset(train_examples, tokenizer, label_map, 512)
-    test_dataset = ner.NerDataset(test_examples, tokenizer, label_map, 512)
+    train_dataset = ner.NerDataset(train_examples, tokenizer, label_map, 613)
+    test_dataset = ner.NerDataset(test_examples, tokenizer, label_map, 613)
 
     batch_size = 8
     train_dataloader = data.DataLoader(dataset=train_dataset,
@@ -62,7 +65,7 @@ def run(dataset):
 
     optimizer = AdamW(model.parameters(), lr=learning_rate0, correct_bias=False)
 
-    total_train_epochs = 5
+    total_train_epochs = 1
     gradient_accumulation_steps = 1
     total_train_steps = int(len(train_examples) / batch_size / gradient_accumulation_steps * total_train_epochs)
     global_step_th = 0

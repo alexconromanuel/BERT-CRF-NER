@@ -1,4 +1,7 @@
 from random import shuffle
+import csv
+from collections import Counter
+import pandas as pd
 import numpy as np
 
 import torch
@@ -7,28 +10,67 @@ from torch.utils import data
 
 from sklearn.metrics import classification_report
 
+def add_bio_ne(df):
+    dfd = df.copy()
+    bio_tag = []
+    prev_tag = "O"
+    for _, tag in df["ne"].iteritems():
+        if tag == "O": #O
+            bio_tag.append((tag))
+            prev_tag = tag
+            continue
+        if tag != "O" and prev_tag == "O": # Begin NE
+            bio_tag.append(("B-"+tag))
+            prev_tag = tag
+        elif prev_tag != "O" and prev_tag == tag: # Inside NE
+            bio_tag.append(("I-"+tag))
+            prev_tag = tag
+        elif prev_tag != "O" and prev_tag != tag: # nearby NE
+            bio_tag.append(("B-"+tag))
+            prev_tag = tag
+    
+    dfd["bio_ne"] = bio_tag
+    return dfd
+
 def read_txt_file(source):
-    rows = []
-    with open(source) as file:
-        for line in file:
-            rows.append(line.strip())
+    df = pd.read_csv(source,
+                     sep="\t",
+                     names=["token", "ne"],
+                     skip_blank_lines=False,
+                     quoting=csv.QUOTE_NONE,
+                     encoding='utf-8')
+    
+    list_tmp = []
+    no = 0
+    for row in df.itertuples():
+        if pd.isnull(row.token):
+            list_tmp.append(np.nan)
+            no+=1
+        else:
+            list_tmp.append(no)
+    df["sentence"] = list_tmp
+    df = df.dropna(thresh=2).reset_index(drop=True)
+    df[["sentence"]] = df[["sentence"]].astype(int)
+    
+    df = add_bio_ne(df)
     
     X = []
     y = []
     X_tmp = []
     y_tmp = []
-
-    for idx, val in enumerate(rows):
-        tokens = val.strip().split("\t")
-        
-        if len(tokens) == 2:
-            X_tmp.append(tokens[0])
-            y_tmp.append(tokens[1])
-        elif len(tokens) == 1:
+    no = 0
+    for row in df.itertuples():
+        if row.sentence == no:
+            X_tmp.append(row.token)
+            y_tmp.append(row.bio_ne)
+        else:
             X.append(X_tmp)
             y.append(y_tmp)
+            no+=1
             X_tmp = []
             y_tmp = []
+            X_tmp.append(row.token)
+            y_tmp.append(row.bio_ne)
 
     assert len(X) == len(y)
 
@@ -78,7 +120,10 @@ class CoNLLDataProcessor():
     def __init__(self, out_lists):
         self.data = out_lists
         shuffle(self.data)
-        self._label_types = ["Place" , "Organisation" , "Person", "[CLS]" , "[SEP]" , "O"]
+        self._label_types = ["B-Place", "I-Place",
+                             "B-Organisation", "I-Organisation",
+                             "B-Person", "I-Person",
+                             "[CLS]" , "[SEP]" , "O"]
         self._num_labels = len(self._label_types)
         self._label_map = {label: i for i,
                            label in enumerate(self._label_types)}
@@ -407,4 +452,4 @@ def evaluate(model, predict_dataloader, label_map):
     classes.remove("[CLS]")
     new_classes = classes.copy()
     
-    print(classification_report(all_labels , all_preds, labels=new_classes))
+    return classification_report(all_labels , all_preds, labels=new_classes)
