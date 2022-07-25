@@ -1,0 +1,547 @@
+[
+    {
+        "doc_id": "Singgalang#0",
+        "doc_text": "Selat Inggris yang memisahkan antara pulau Britania Raya dengan Perancis Utara .",
+        "entities": [
+            {
+                "entity_id": 0,
+                "text": "Selat Inggris",
+                "label": "PLACE",
+                "start_offset": 0,
+                "end_offset": 13
+            },
+            {
+                "entity_id": 1,
+                "text": "Britania Raya",
+                "label": "PLACE",
+                "start_offset": 43,
+                "end_offset": 56
+            },
+            {
+                "entity_id": 2,
+                "text": "Perancis Utara",
+                "label": "PLACE",
+                "start_offset": 64,
+                "end_offset": 78
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#1",
+        "doc_text": "Kerajaan ingin bersaing lebih baik dengan hub utama penerbangan di negara tetangga Uni Emirat Arab dan Qatar .",
+        "entities": [
+            {
+                "entity_id": 3,
+                "text": "Uni Emirat Arab",
+                "label": "PLACE",
+                "start_offset": 83,
+                "end_offset": 98
+            },
+            {
+                "entity_id": 4,
+                "text": "Qatar",
+                "label": "PLACE",
+                "start_offset": 103,
+                "end_offset": 108
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#2",
+        "doc_text": "Kairo mendevaluasi",
+        "entities": [
+            {
+                "entity_id": 5,
+                "text": "Kairo",
+                "label": "PLACE",
+                "start_offset": 0,
+                "end_offset": 5
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#3",
+        "doc_text": "sebesar 15% dan meminta bantuan International Monitory Fund pada bulan Maret lalu .",
+        "entities": [
+            {
+                "entity_id": 6,
+                "text": "International Monitory Fund",
+                "label": "ORGANISATION",
+                "start_offset": 32,
+                "end_offset": 59
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#4",
+        "doc_text": "Wakil Ketua DPRD DKI Fraksi Gerindra , Rani Mauliani , mempertanyakan pemetaan atau mapping sebelum proyek itu dimulai .",
+        "entities": [
+            {
+                "entity_id": 7,
+                "text": "DPRD",
+                "label": "ORGANISATION",
+                "start_offset": 12,
+                "end_offset": 16
+            },
+            {
+                "entity_id": 8,
+                "text": "DKI",
+                "label": "PLACE",
+                "start_offset": 17,
+                "end_offset": 20
+            },
+            {
+                "entity_id": 9,
+                "text": "Fraksi Gerindra",
+                "label": "ORGANISATION",
+                "start_offset": 21,
+                "end_offset": 36
+            },
+            {
+                "entity_id": 10,
+                "text": "Rani Mauliani",
+                "label": "PERSON",
+                "start_offset": 39,
+                "end_offset": 52
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#5",
+        "doc_text": "Rani adalah desainer busana muslim yang berfokus pada busana kasual dengan garis desain modern dan minimalis .",
+        "entities": [
+            {
+                "entity_id": 11,
+                "text": "Rani",
+                "label": "PERSON",
+                "start_offset": 0,
+                "end_offset": 4
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#6",
+        "doc_text": "Van Tillburg menekankan kalau orang enggak boleh membuat stereotip atau mengabaikan orang lain hanya karena membosankan .",
+        "entities": [
+            {
+                "entity_id": 12,
+                "text": "Van Tillburg",
+                "label": "PERSON",
+                "start_offset": 0,
+                "end_offset": 12
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#7",
+        "doc_text": "Musisi dan komposer Rani Jambak meluncurkan karya terbaru hasil eksplorasi musik soundscape kreatif .",
+        "entities": [
+            {
+                "entity_id": 13,
+                "text": "Rani Jambak",
+                "label": "PERSON",
+                "start_offset": 20,
+                "end_offset": 31
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#8",
+        "doc_text": "Burhanuddin mengatakan pihaknya juga telah menyidik dan melimpah perkara dugaan pelanggaran HAM berat di Kabupaten Paniai .",
+        "entities": [
+            {
+                "entity_id": 14,
+                "text": "Burhanuddin",
+                "label": "PERSON",
+                "start_offset": 0,
+                "end_offset": 11
+            },
+            {
+                "entity_id": 15,
+                "text": "Kabupaten Paniai",
+                "label": "PLACE",
+                "start_offset": 105,
+                "end_offset": 121
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#9",
+        "doc_text": "Sementara dari sisi lain , tak ada penambahan ruas jalan di Kota Bandung yang akhirnya menimbulkan kemacetan terjadi di mana-mana .",
+        "entities": [
+            {
+                "entity_id": 16,
+                "text": "Kota Bandung",
+                "label": "PLACE",
+                "start_offset": 60,
+                "end_offset": 72
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#10",
+        "doc_text": "Penanggulangan Bencana Daerah Garut , Jalan Terusan Pahlawan , Kecamatan Tarogong Kidul , Kabupaten Garut .",
+        "entities": [
+            {
+                "entity_id": 17,
+                "text": "Penanggulangan Bencana Daerah",
+                "label": "ORGANISATION",
+                "start_offset": 0,
+                "end_offset": 29
+            },
+            {
+                "entity_id": 18,
+                "text": "Garut",
+                "label": "PLACE",
+                "start_offset": 30,
+                "end_offset": 35
+            },
+            {
+                "entity_id": 19,
+                "text": "Jalan Terusan Pahlawan",
+                "label": "PLACE",
+                "start_offset": 38,
+                "end_offset": 60
+            },
+            {
+                "entity_id": 20,
+                "text": "Kecamatan Tarogong Kidul",
+                "label": "PLACE",
+                "start_offset": 63,
+                "end_offset": 87
+            },
+            {
+                "entity_id": 21,
+                "text": "Kabupaten Garut",
+                "label": "PLACE",
+                "start_offset": 90,
+                "end_offset": 105
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#11",
+        "doc_text": "KLM adalah maskapai penerbangan terbesar di Belanda .",
+        "entities": [
+            {
+                "entity_id": 22,
+                "text": "KLM",
+                "label": "ORGANISATION",
+                "start_offset": 0,
+                "end_offset": 3
+            },
+            {
+                "entity_id": 23,
+                "text": "Belanda",
+                "label": "PLACE",
+                "start_offset": 44,
+                "end_offset": 51
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#12",
+        "doc_text": "\" Insya Allah tinggal selangkah lagi , 13 tahun penantian Jawa Barat akan dapat tambahan pahlawan nasional , \" kata Ketua Tim Peneliti",
+        "entities": [
+            {
+                "entity_id": 24,
+                "text": "Jawa Barat",
+                "label": "PLACE",
+                "start_offset": 58,
+                "end_offset": 68
+            },
+            {
+                "entity_id": 25,
+                "text": "Tim Peneliti",
+                "label": "ORGANISATION",
+                "start_offset": 122,
+                "end_offset": 134
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#13",
+        "doc_text": "Pengkaji  Gelar Pusat Muhammad",
+        "entities": [
+            {
+                "entity_id": 26,
+                "text": "Pengkaji  Gelar Pusat Muhammad",
+                "label": "ORGANISATION",
+                "start_offset": 0,
+                "end_offset": 30
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#14",
+        "doc_text": "Bando dilansir detikJabar dari laman  resmi Universitas Padjajaran .",
+        "entities": [
+            {
+                "entity_id": 27,
+                "text": "Bando",
+                "label": "PERSON",
+                "start_offset": 0,
+                "end_offset": 5
+            },
+            {
+                "entity_id": 28,
+                "text": "Universitas Padjajaran",
+                "label": "ORGANISATION",
+                "start_offset": 44,
+                "end_offset": 66
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#15",
+        "doc_text": "Institut Teknologi Del atau yang biasa disebut dengan IT Del , adalah sebuah perguruan tinggi swasta di Sumatera Utara yang berfokus di bidang teknologi .",
+        "entities": [
+            {
+                "entity_id": 29,
+                "text": "Institut Teknologi Del",
+                "label": "ORGANISATION",
+                "start_offset": 0,
+                "end_offset": 22
+            },
+            {
+                "entity_id": 30,
+                "text": "IT Del",
+                "label": "ORGANISATION",
+                "start_offset": 54,
+                "end_offset": 60
+            },
+            {
+                "entity_id": 31,
+                "text": "Sumatera Utara",
+                "label": "PLACE",
+                "start_offset": 104,
+                "end_offset": 118
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#16",
+        "doc_text": "Kawasan Gunung Ijen menyimpan banyak pesona yang membuatnya sangat populer .",
+        "entities": [
+            {
+                "entity_id": 32,
+                "text": "Gunung Ijen",
+                "label": "PLACE",
+                "start_offset": 8,
+                "end_offset": 19
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#17",
+        "doc_text": "Gunung Sibayak merupakan salah satu destinasi favorit bagi para pendaki gunung selain Gunung Sinabung .",
+        "entities": [
+            {
+                "entity_id": 33,
+                "text": "Gunung Sibayak",
+                "label": "PLACE",
+                "start_offset": 0,
+                "end_offset": 14
+            },
+            {
+                "entity_id": 34,
+                "text": "Gunung Sinabung",
+                "label": "PLACE",
+                "start_offset": 86,
+                "end_offset": 101
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#18",
+        "doc_text": "Universitas Kairo sudah sangat terkenal sebagai universitas terbaik untuk mempelajari Islam .",
+        "entities": [
+            {
+                "entity_id": 35,
+                "text": "Universitas Kairo",
+                "label": "ORGANISATION",
+                "start_offset": 0,
+                "end_offset": 17
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#19",
+        "doc_text": "James Gitundu Kairo memiliki pengalaman kerja yang luas dalam konservasi , rehabilitasi , dan pemanfaatan berkelanjutan sumber daya pesisir dan laut .",
+        "entities": [
+            {
+                "entity_id": 36,
+                "text": "James Gitundu Kairo",
+                "label": "PERSON",
+                "start_offset": 0,
+                "end_offset": 19
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#20",
+        "doc_text": "Janaiah Kota adalah peneliti biomedis independen , ahli dalam terapi gen adeno-associated virus dan terapi RNAi , penulis beberapa artikel jurnal yang diterbitkan dan pemegang beberapa paten yang memiliki implikasi dunia nyata untuk membantu orang .",
+        "entities": [
+            {
+                "entity_id": 37,
+                "text": "Janaiah Kota",
+                "label": "PERSON",
+                "start_offset": 0,
+                "end_offset": 12
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#21",
+        "doc_text": "Informasi yang dihimpun , baru-baru ini CHOC mendatangkan sebanyak",
+        "entities": []
+    },
+    {
+        "doc_id": "Singgalang#22",
+        "doc_text": "orang TKA asal  China dan puluhan orang tenaga kerja Indonesia dari luar Bali .",
+        "entities": [
+            {
+                "entity_id": 38,
+                "text": "China",
+                "label": "PLACE",
+                "start_offset": 16,
+                "end_offset": 21
+            },
+            {
+                "entity_id": 39,
+                "text": "Indonesia",
+                "label": "PLACE",
+                "start_offset": 53,
+                "end_offset": 62
+            },
+            {
+                "entity_id": 40,
+                "text": "Bali",
+                "label": "PLACE",
+                "start_offset": 73,
+                "end_offset": 77
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#23",
+        "doc_text": "Pemilik Halalan Toyyiban  Masakan  Padang ,  Abdul Gapur  (46)  mengaku  total  lebih dari 10 menu yang Ia bawa setiap harinya .",
+        "entities": [
+            {
+                "entity_id": 41,
+                "text": "Padang",
+                "label": "PLACE",
+                "start_offset": 35,
+                "end_offset": 41
+            },
+            {
+                "entity_id": 42,
+                "text": "Abdul Gapur ",
+                "label": "PERSON",
+                "start_offset": 45,
+                "end_offset": 57
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#24",
+        "doc_text": "Universitas Sumatera Utara terus melakukan serangkaian kegiatan untuk mendukung program prioritas yakni internasionalisasi dan mengikuti 12 th Joint Working Group 2022 di Prancis .",
+        "entities": [
+            {
+                "entity_id": 43,
+                "text": "Universitas Sumatera Utara",
+                "label": "ORGANISATION",
+                "start_offset": 0,
+                "end_offset": 26
+            },
+            {
+                "entity_id": 44,
+                "text": "Prancis",
+                "label": "PLACE",
+                "start_offset": 171,
+                "end_offset": 178
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#25",
+        "doc_text": "Universitas Sumatera Utara akan berkolaborasi dengan salah satu universitas di Prancis yakni Universite Polytechnique Huss-de-France .",
+        "entities": [
+            {
+                "entity_id": 45,
+                "text": "Universitas Sumatera Utara",
+                "label": "ORGANISATION",
+                "start_offset": 0,
+                "end_offset": 26
+            },
+            {
+                "entity_id": 46,
+                "text": "Prancis",
+                "label": "PLACE",
+                "start_offset": 79,
+                "end_offset": 86
+            },
+            {
+                "entity_id": 47,
+                "text": "Universite Polytechnique Huss-de-France",
+                "label": "ORGANISATION",
+                "start_offset": 93,
+                "end_offset": 132
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#26",
+        "doc_text": "Willem II Tilburg adalah klub sepak bola Belanda yang berbasis di kota Tilburg .",
+        "entities": [
+            {
+                "entity_id": 48,
+                "text": "Willem II Tilburg",
+                "label": "ORGANISATION",
+                "start_offset": 0,
+                "end_offset": 17
+            },
+            {
+                "entity_id": 49,
+                "text": "Belanda",
+                "label": "PLACE",
+                "start_offset": 41,
+                "end_offset": 48
+            },
+            {
+                "entity_id": 50,
+                "text": "Tilburg",
+                "label": "PLACE",
+                "start_offset": 71,
+                "end_offset": 78
+            }
+        ]
+    },
+    {
+        "doc_id": "Singgalang#37221",
+        "doc_text": "Christine Madeleine Odette Lagarde -LRB- -RRB- saat ini menjabat Menteri Urusan Ekonomi , Keuangan dan Perindustrian Perancis , dan direktur terpilih Dana Moneter Internasional .",
+        "entities": [
+            {
+                "entity_id": 77195,
+                "text": "Madeleine Odette Lagarde",
+                "label": "PERSON",
+                "start_offset": 10,
+                "end_offset": 34
+            },
+            {
+                "entity_id": 77196,
+                "text": "Perancis",
+                "label": "PLACE",
+                "start_offset": 117,
+                "end_offset": 125
+            },
+            {
+                "entity_id": 77197,
+                "text": "Dana Moneter Internasional",
+                "label": "ORGANISATION",
+                "start_offset": 150,
+                "end_offset": 176
+            }
+        ]
+    }
+]
