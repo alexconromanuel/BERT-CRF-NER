@@ -1,17 +1,13 @@
 # Indonesian BERT-CRF
 
-# Environment Setup 
-Kode program  menggunakan python 3.6 environment dan GPU.Langkah-langkah berikut dalam menggunakan virtual environrment python sebagai berikut: 
-## Update pip pada komputer/Laptop anda 
-   $ py -m pip install --upgrade pip
-   $ py -m pip –version
-## Selanjutnya install virtual env
-   $ py -m pip install --user virtualenv
-   $ py -m venv env env = nama env sesuai keinginan anda)
-## Mengaktifkan virtual env 
-   $ .\env\Scripts\activate
-## Install requirements
-   $  pip install-r requirements.txt
-  
+This directory has code to train and evaluate BER-CRF based models on NER task using the SINGGALANG datasets.
 
-   
+## Environment Setup
+The program code uses the python 3.6 environment and GPU. The following steps in using the python virtual environment are as follows:
+```bash
+py -m pip install --upgrade pip
+```
+or 
+```bash
+py -m pip –version
+```
