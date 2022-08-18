@@ -1,2 +1,2 @@
-# Indonesin BERT-CRF
+# Indonesian BERT-CRF
 
