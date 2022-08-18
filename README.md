@@ -47,8 +47,34 @@ run_bert_harem.py \
 ## Trained model
 Here is checkpoints of trained NER models on ambigu and phrase dataset.
 
-```python
-[Link to drive](https://tinyurl.com/bert-base-multilingual-cased)
-
+[bert-base-multilingual-cased](https://tinyurl.com/bert-base-multilingual-cased)
+### Run BERT-CRF Ambigu
+```bash
+python run_bert_harem.py \
+    --bert_model /bert-base-multilingual-cased/ \
+    --labels_file data/classes-total.txt \
+    --train_file data/singgalang-train.json \
+    --valid_file data/singgalang-dev.json \
+    --num_train_epochs 10 \
+    --per_gpu_train_batch_size 8 \
+    --gradient_accumulation_steps 4 \
+    --do_eval \
+    --eval_file data/singgalang-test_ambigu.json \
+    --output_dir ambiguout/
+```
+### Run BERT-CRF Frasa
+```bash
+python run_bert_harem.py \
+    --bert_model /bert-base-multilingual-cased/ \
+    --labels_file data/classes-total.txt \
+    --train_file data/singgalang-train.json \
+    --valid_file data/singgalang-dev.json \
+    --num_train_epochs 10 \
+    --per_gpu_train_batch_size 8 \
+    --gradient_accumulation_steps 4 \
+    --do_eval \
+    --eval_file data/singgalang-test_phrase.json \
+    --output_dir frasaout/
+```
 
 
