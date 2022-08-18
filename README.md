@@ -29,3 +29,27 @@ py -m venv env env
 ```bash
 pip install -r requirements.txt
 ```
+### Run BERT-CRF
+```bash
+run_bert_harem.py \
+    --bert_model bert-base-multilingual-cased \
+    --labels_file data/classes-total.txt \
+    --do_train \
+    --train_file data/singgalang-train.json \
+    --valid_file data/singgalang-dev.json \
+    --num_train_epochs 10 \
+    --per_gpu_train_batch_size 8 \
+    --gradient_accumulation_steps 4 \
+    --do_eval \
+    --eval_file data/singgalang-test.json \
+    --output_dir output
+```
+## Trained model
+Here is checkpoints of trained NER models on ambigu and phrase dataset.
+
+```python
+import foobar
+
+
+
+
