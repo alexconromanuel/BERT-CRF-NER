@@ -76,5 +76,18 @@ python run_bert_harem.py \
     --eval_file data/singgalang-test_phrase.json \
     --output_dir frasaout/
 ```
-
-
+### Run BERT-CRF Inference
+The script run_inference.py can be used to get predictions for new text using a trained NER model. Instructions:
+#### Save the inference data in a txt file
+```bash
+Institut Teknologi Del adalah salah satu perguruan tinggi di Toba
+```
+#### Run inference command
+```bash
+python run_inference.py \
+    --bert_model bert-base-multilingual-cased \
+    --labels_file data/classes-total.txt \
+    --input_file inference.txt \
+    --output_format json \
+    --output_file name \
+```
