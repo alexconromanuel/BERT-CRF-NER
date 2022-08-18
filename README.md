@@ -48,8 +48,7 @@ run_bert_harem.py \
 Here is checkpoints of trained NER models on ambigu and phrase dataset.
 
 ```python
-import foobar
-
+[Link to drive](https://tinyurl.com/bert-base-multilingual-cased)
 
 
 
